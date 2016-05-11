@@ -56,11 +56,6 @@ public class Keygen {
             cipher.init(Cipher.ENCRYPT_MODE, keys.getPublic());
             bytes = cipher.doFinal(bytes);
 
-            for(byte b : bytes){
-                System.out.print(b + " ");
-            }
-            System.out.println();
-
         } catch (InvalidKeyException e) {
             e.printStackTrace();
         } catch (IllegalBlockSizeException e) {

@@ -462,14 +462,22 @@ $(document).ready(function () {
 
         console.log("string key: " + rsaKey);
 
-        var encrypted = cryptico.encrypt($("#password").val(), rsaKey);
+        var password = $("#password").val();
+        var encrypted = cryptico.encrypt(password, rsaKey);
 
         console.log(encrypted);
 
         $("#password").val(encrypted.cipher);
+
+        var enc = new JSEncrypt();
+        enc.setPublicKey(rsaKey);
+
+        var e = enc.encrypt(password);
+
+        console.log(e);
         
         $(this).off("submit");
-        this.submit();
+//        this.submit();
     });
 
 });

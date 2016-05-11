@@ -15,11 +15,12 @@
         <script src="scripts/api.js"></script>
         <script src="scripts/cryptico.js"></script>
         <script src="scripts/script.js"></script>
+        <script src="scripts/jsencrypt/bin/jsencrypt.min.js"></script>
     </head>
 
     <body>
         HI !!!
-        <form action="controller" id="loginForm">
+        <form action="controller" id="loginForm" method="post">
             <input name="login" id="login" placeholder="Login" />
             </br>
             <input name="password" id="password" type="password" placeholder="Password" />

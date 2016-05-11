@@ -1,7 +1,6 @@
 package ua.nure.serdiuk;
 
 import javax.crypto.Cipher;
-import java.math.BigInteger;
 import java.security.KeyPair;
 import java.security.KeyPairGenerator;
 
@@ -21,9 +20,6 @@ public class Demo {
         byte[] decrypted= cipher.doFinal(encrypted);
 //        BigInteger integer = new BigInteger(encrypted);
         System.out.println(new String(decrypted));
-
-
-//        byte[] arr = keys.getPublic()Encoded();
 
     }
 }

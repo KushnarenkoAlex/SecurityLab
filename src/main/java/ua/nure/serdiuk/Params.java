@@ -5,5 +5,8 @@ package ua.nure.serdiuk;
  */
 public class Params {
 
-    public static final String KEYGEN = "keygen";
+    public static final String RSA = "rsa";
+
+    public static final String USER_SERVICE = "userService";
+
 }
